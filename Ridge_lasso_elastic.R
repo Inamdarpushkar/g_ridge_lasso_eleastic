@@ -19,11 +19,6 @@ ind <- sample(2, nrow(data), replace = T, prob = c(0.7, 0.3))
 train <- data[ind==1,]
 test <- data[ind==2,]
 
-# Custom Control Parameters
-custom <- trainControl(method = "---",
-                       number = ---,
-                       repeats = 5,
-                       verboseIter = T)
 
 # Linear Model
 set.seed(1234)
